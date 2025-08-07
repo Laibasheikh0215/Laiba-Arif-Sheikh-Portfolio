@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pricing Table</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #264d3b;
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .pricing-header {
+      margin-bottom: 50px;
+    }
+
+    .highlight {
+      color: #f4b024;
+    }
+
+    .get-started-btn {
+      background-color: #f4b024;
+      color: white;
+      border-radius: 50px;
+      padding: 8px 20px;
+      border: none;
+    }
+
+    .get-started-btn i {
+      background-color: white;
+      color: #f4b024;
+      border-radius: 50%;
+      padding: 4px;
+      margin-left: 8px;
+    }
+
+    .pricing-card {
+      background-color: #2e4f2e;
+      border-radius: 15px;
+      padding: 0;
+      position: relative;
+      min-height: 420px;
+      overflow: hidden;
+    }
+
+    .pricing-card2 {
+      background-color: #f4b024;
+      border-radius: 15px;
+      padding: 0;
+      position: relative;
+      min-height: 420px;
+      overflow: hidden;
+    }
+
+    .pricing-card .card-header {
+      background-color: #1f3a29;
+      padding: 30px 20px;
+      margin: 20px;
+      border-radius: 20px;
+    }
+
+     .pricing-card2 .card-header {
+      background-color: #1f3a29;
+      padding: 30px 20px;
+      margin: 20px;
+      border-radius: 20px;
+    }
+    .highlight-card .card-header {
+      background-color: #1f3a29;
+      color: white;
+      padding: 30px 20px;
+    }
+
+    .icon-circle {
+      width: 32px;
+      height: 32px;
+      background-color: #f4b024;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    .icon-circle i {
+      font-size: 14px;
+      color: #2e4f2e;
+    }
+
+    .price {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #f4b024;
+    }
+
+
+
+    .highlight-card .price {
+      color: #2e4f2e;
+    }
+
+    .price small {
+      font-size: 1rem;
+      color: white;
+      font-weight: 400;
+    }
+
+    .highlight-card .price small {
+      color: #444;
+    }
+
+    .feature-list {
+      list-style: none;
+      padding: 25px;
+      margin: 0;
+    }
+
+    .feature-list li {
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      font-size: 0.95rem;
+      opacity: 0.9;
+    }
+
+    .feature-list li i {
+      color: #f4b024;
+      margin-right: 10px;
+    }
+
+    .highlight-card .feature-list li i {
+      color: #2e4f2e;
+    }
+
+    .muted {
+      opacity: 0.4;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container py-5">
+    <div class="d-flex justify-content-between align-items-center pricing-header">
+      <div>
+        <small class="text-white-50">Pricing Table</small>
+        <h2 class="fw-bold text-white">My <span class="highlight">Pricing Model</span></h2>
+      </div>
+      <button class="get-started-btn">
+        Get Started <i class="bi bi-arrow-right"></i>
+      </button>
+    </div>
+
+    <div class="row g-4">
+      <!-- Hourly -->
+      <div class="col-md-4">
+        <div class="pricing-card shadow">
+          <div class="card-header">
+            <div class="icon-circle">
+              <i class="bi bi-box-arrow-up-right"></i>
+            </div>
+            <h5>2 Days</h5>
+            <div class="price">$100 <small>/ Day</small></div>
+          </div>
+          <ul class="feature-list">
+            <div class="paragraph"><b>Amazon Virtual Assistant (Basic) </b>Product Research + Market Analysis+ Listing Content+ 2 hrs deep review meeting- 1 Product</div>
+           <br>
+            <li><i class="bi bi-check-circle-fill" ></i> 2 days</li>
+            <li><i class="bi bi-check-circle-fill"></i> Inventory Management</li>
+            <li style="color: #ccc;"><i class="bi bi-check-circle-fill muted" ></i> Order Management</li>
+            <li><i class="bi bi-check-circle-fill"></i> Customer Assistant</li>
+            <li class="muted" style="color: #ccc;"><i class="bi bi-check-circle-fill muted"></i>Product offers and promotions</li>
+            <li class="muted"><i class="bi bi-check-circle-fill"></i> Reporting</li>
+            <li class="muted"><i class="bi bi-check-circle-fill"></i> Account Management</li>
+
+          </ul>
+        </div>
+      </div>
+
+      <!-- Monthly -->
+      <div class="col-md-4">
+        <div class="pricing-card2 highlight-card shadow">
+          <div class="card-header">
+            <div class="icon-circle">
+              <i class="bi bi-box-arrow-up-right"></i>
+            </div>
+            <h5>Half Month</h5>
+            <div class="price" style="color: #f4b024;">$300 <small style="font-size: 1rem;
+      color: white;
+      font-weight: 400;">/ 15 days</small></div>
+          </div>
+          <ul class="feature-list" style="color:#1f3a29;">
+            <div class="paragraph">Amazon Virtual Assistant (Standard) Product Research + Listing + Sourcing + custom tasks + Account management A-Z- (1 Product)</div>
+            <br>
+            <li><i class="bi bi-check-circle-fill"></i> 15 days</li>
+            <li><i class="bi bi-check-circle-fill"></i> Inventory Management</li>
+            <li><i class="bi bi-check-circle-fill"></i> Order Management</li>
+            <li><i class="bi bi-check-circle-fill"></i> Customer Assistant</li>
+            <li><i class="bi bi-check-circle-fill"></i> Product offers and promotions</li>
+            <li><i class="bi bi-check-circle-fill"></i> Reporting</li>
+            <li class="muted"><i class="bi bi-check-circle-fill"></i> Account Management</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Quarterly -->
+      <div class="col-md-4">
+        <div class="pricing-card shadow">
+          <div class="card-header">
+            <div class="icon-circle">
+              <i class="bi bi-box-arrow-up-right"></i>
+            </div>
+            <h5>Monthly</h5>
+            <div class="price">$600 <small>/ Month</small></div>
+          </div>
+          <ul class="feature-list">
+            <div class="paragraph">Amazon Virtual Assistant (Premium) Product Research + listing + Sourcing + PPC Ads + Account management A-Z (1 Product)</div>
+            <br>
+            <li><i class="bi bi-check-circle-fill"></i> 30 days</li>
+            <li><i class="bi bi-check-circle-fill"></i> Inventory Management</li>
+            <li><i class="bi bi-check-circle-fill"></i> Order Management</li>
+            <li><i class="bi bi-check-circle-fill"></i> Customer Assistant</li>
+            <li><i class="bi bi-check-circle-fill"></i> Product offers and promotions</li>
+            <li><i class="bi bi-check-circle-fill"></i> Reporting</li>
+            <li><i class="bi bi-check-circle-fill"></i> Account Management</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Laiba Arif Sheikh</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container-fluid">
+      <!-- Brand -->
+      <a class="navbar-brand" href="#">
+        <span class="brand-icon">L</span>
+        Laiba Sheikh
+      </a>
+      <!-- Toggle button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Collapsible nav content -->
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <!-- Centered nav items -->
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blogs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Testimonials</a>
+          </li>
+        </ul>
+
+        <!-- Contact button aligned right -->
+        <div class="d-flex contact-btn-wrapper">
+          <a href="#" class="btn contact-btn" style="
+              background-color: #f4a300;
+              color: #2d4a30;
+              font-weight: 600;
+              border-radius: 50px;
+            ">Contact Me</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row justify-content-between align-items-center">
+      <!-- Left Side Content -->
+      <div class="col-lg-6 col-md-8 col-12 text-center text-lg-start">
+        <div class="text-content overflow">
+          <h5 class="main-heading1">Hello There!</h5>
+          <h2 class="sub-heading1">My self <span class="special-text">Laiba Arif Sheikh.</span></h2>
+          <div class="static-text">I am <div class="dynamic-text">
+              <ul>
+                <li>a Web Developer</li>
+                <li>an E-commerce Virtual Assistant</li>
+                <li>a Freelancer</li>
+              </ul>
+            </div>
+          </div>
+
+          <h2 class="sub-heading2">Based in <span class="special-text">Pakistan.</span> </h2>
+
+          <!-- Making Buttons -->
+          <div class="btns">
+            <a href="#" class="portfolio-btn">
+              View My Portfolio
+              <span class="icon-circle">
+                <i class="bi bi-play-fill"></i>
+              </span>
+            </a>
+            <a href="#" class="hire-me">Hire Me.</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Side - Images (Moved Up on Large Screens) -->
+      <div class="col-lg-5 col-md-6 col-12 d-flex justify-content-center align-self-start mt-n5 move-up" id="design">
+        <div class="Square">
+          <div class="images overflow">
+            <img src="Assets/Web_Devloper-removebg-preview.png" alt="portfolio-imgae" id="portfolio-imgae"
+              class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Making Skills Strip -->
+  <div class="service-strip-wrapper d-none d-lg-block">
+    <!-- Green bar at the bottom -->
+    <div class="green-bar1"></div>
+    <div class="service-strip ">
+      <span class="service-item">Amazon Private Label</span>
+      <span class="separator">*</span>
+      <span class="service-item">Amazon Wholesale</span>
+      <span class="separator">*</span>
+      <span class="service-item">Web Development</span>
+      <span class="separator">*</span>
+      <span class="service-item">LLC/LTD Creation</span>
+      <span class="separator">*</span>
+      <span class="service-item">Graphic Designing</span>
+      <span class="separator">*</span>
+      <span class="service-item">Shopify Store Development</span>
+    </div>
+    <!-- Green bar at the bottom -->
+    <div class="green-bar2"></div>
+  </div>
+
+  <!-- Making Services card -->
+  <section class="container py-5">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h2 class="section-title">
+        <span class="section-title-icon" style="color:#f4a300;"> - <span class="section-title"
+            style="color:black;">Services</span></span>
+        <br>
+        <span class="highlight">Services</span> I Provide
+      </h2>
+      <button class="view-btn d-flex align-items-center" id="view-service-btn" onclick="scrollRight()">
+        View All Services &nbsp;<span>&rarr;</span>
+      </button>
+    </div>
+
+    <div class="scrolling-wrapper" id="cardContainer">
+
+      <!-- Repeat this block for each service -->
+      <div class="service-card-wrapper">
+        <div class="service-card">
+          <h5>Amazon Private Label</h5>
+          <p>I help brands grow on Amazon through private label—focusing on product research, sourcing, and launch.</p>
+          <a href="#">Learn more →</a>
+        </div>
+        <div class="border-line border-top"></div>
+        <div class="border-line border-right"></div>
+        <div class="border-line border-bottom"></div>
+        <div class="border-line border-left"></div>
+      </div>
+
+      <div class="service-card-wrapper">
+        <div class="service-card">
+          <h5>Amazon Wholesale</h5>
+          <p>I help brands grow on Amazon through wholesale—focusing on product sourcing, account management, and
+            scalable growth.</p>
+          <a href="#">Learn more →</a>
+        </div>
+        <div class="border-line border-top"></div>
+        <div class="border-line border-right"></div>
+        <div class="border-line border-bottom"></div>
+        <div class="border-line border-left"></div>
+      </div>
+
+      <div class="service-card-wrapper">
+        <div class="service-card">
+          <h5>Etsy Store Development and Management</h5>
+          <p>I manage Etsy stores—focusing on listings, branding, and strategies to boost visibility and sales.</p>
+          <a href="#">Learn more →</a>
+        </div>
+        <div class="border-line border-top"></div>
+        <div class="border-line border-right"></div>
+        <div class="border-line border-bottom"></div>
+        <div class="border-line border-left"></div>
+      </div>
+
+      <div class="service-card-wrapper">
+        <div class="service-card">
+          <h5>Shopify Store Development</h5>
+          <p>I build and manage Shopify stores—specializing in custom design, product setup, and marketing to help your
+            brand grow online.</p>
+          <a href="#">Learn more →</a>
+        </div>
+        <div class="border-line border-top"></div>
+        <div class="border-line border-right"></div>
+        <div class="border-line border-bottom"></div>
+        <div class="border-line border-left"></div>
+      </div>
+
+      <div class="service-card-wrapper">
+        <div class="service-card">
+          <h5>LLC/LTD Creation</h5>
+          <p>I help entrepreneurs set up their LLCs and LTDs—guiding you through the legal process, documentation, and
+            registration smoothly.</p>
+          <a href="#">Learn more →</a>
+        </div>
+        <div class="border-line border-top"></div>
+        <div class="border-line border-right"></div>
+        <div class="border-line border-bottom"></div>
+        <div class="border-line border-left"></div>
+      </div>
+
+      <div class="service-card-wrapper">
+        <div class="service-card">
+          <h5>Logo & Poster Designing</h5>
+          <p>I design unique logos and posters that capture your brand’s identity—creative, professional, and tailored
+            to your vision.</p>
+          <a href="#">Learn more →</a>
+        </div>
+        <div class="border-line border-top"></div>
+        <div class="border-line border-right"></div>
+        <div class="border-line border-bottom"></div>
+        <div class="border-line border-left"></div>
+      </div>
+
+      <div class="service-card-wrapper">
+        <div class="service-card">
+          <h5>Front end Development</h5>
+          <p>I craft responsive and user-friendly websites using HTML, CSS, JavaScript, and modern frameworks—bringing
+            your designs to life.</p>
+          <a href="#">Learn more →</a>
+        </div>
+        <div class="border-line border-top"></div>
+        <div class="border-line border-right"></div>
+        <div class="border-line border-bottom"></div>
+        <div class="border-line border-left"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Making About Me section -->
+  <div class="About-me-container">
+    <div class="row justify-content-between align-items-center" style="width: 100%;">
+      <!-- Left Side Content -->
+
+      <div class="col-lg-5 col-md-6 col-12 d-flex justify-content-center align-self-start mt-n5 move-up" id="design">
+        <div class="Square">
+          <div class="images overflow">
+            <img src="Assets/Web_Devloper__1_-removebg-preview (3).png" alt="portfolio-imgae" id="portfolio-imgae"
+              class="img-fluid" style="height: 400px; width: 350px;" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Side - Images (Moved Up on Large Screens) -->
+      <div class="col-lg-6 col-md-8 col-12 text-center text-lg-start">
+        <div class="text-content overflow">
+          <h2 class="section-title" style="color:white;">
+            <span class="section-title-icon" style="color:#f4a300;"> - <span class="section-title"
+                style="color:white;">About Me</span></span>
+            <br>
+            Who is <span class="highlight">Laiba Arif Sheikh</span>?
+          </h2>
+          <h6 class="About-me-content">I'm an aspiring web developer and a professional e-commerce expert specializing
+            in Amazon Private Label and Wholesale. I also help businesses grow through Etsy store development and
+            management, and build high-converting Shopify stores. With a blend of technical and e-commerce skills, I
+            turn ideas into digital success.
+          </h6>
+
+          <!-- Making Buttons -->
+          <div class="btn cv-btn">
+            <a href="https://drive.google.com/file/d/1Z8BKHIH-932sT3-5xAHDauMfcj8in1Uv/view?usp=drive_link"
+              class="cv-btn" target="_blank">
+              Download my CV
+              <span class="icon-circle">
+                &nbsp;<span>&rarr;</span>
+              </span>
+            </a>
+            <a href="#" class="name-btn">Laiba Arif Sheikh</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Making fav tool section -->
+  <section class="tool-section">
+    <h6>- My Favorite Tools</h6>
+    <h2 class="text-warning">Exploring the Tools</h2>
+
+    <div class="container mt-5">
+      <div class="row justify-content-center g-4">
+
+        <!-- Tool 1 -->
+        <div class="col-6 col-md-2 text-center">
+          <div class="tool-icon-wrapper">
+            <img src="Assets/helium.png" alt="helium">
+          </div>
+          <div class="tool-percent" data-target="100">0%</div>
+          <div class="tool-name">Helium 10</div>
+        </div>
+
+        <!-- Tool 2 -->
+        <div class="col-6 col-md-2 text-center">
+          <div class="tool-icon-wrapper">
+            <img src="Assets/jungle scout.png" alt="Jungle scout">
+          </div>
+          <div class="tool-percent" data-target="96">0%</div>
+          <div class="tool-name">Jungle Scout</div>
+        </div>
+
+        <!-- Tool 3 -->
+        <div class="col-6 col-md-2 text-center">
+          <div class="tool-icon-wrapper">
+            <img src="Assets/keepa.png" alt="keepa">
+          </div>
+          <div class="tool-percent" data-target="90">0%</div>
+          <div class="tool-name">Keepa</div>
+        </div>
+
+        <!-- Tool 4 -->
+        <div class="col-6 col-md-2 text-center">
+          <div class="tool-icon-wrapper">
+            <img src="Assets/Adobe illustrator.png" alt="Adobe illustrator">
+          </div>
+          <div class="tool-percent" data-target="80">0%</div>
+          <div class="tool-name">Adobe Illustrator</div>
+        </div>
+
+        <!-- Tool 5 -->
+        <div class="col-6 col-md-2 text-center">
+          <div class="tool-icon-wrapper">
+            <img src="Assets/github.png" alt="github">
+          </div>
+          <div class="tool-percent" data-target="70">0%</div>
+          <div class="tool-name">Git Hub</div>
+        </div>
+
+        <!-- Tool 6 -->
+        <div class="col-6 col-md-2 text-center">
+          <div class="tool-icon-wrapper">
+            <img src="Assets/visual code.png" alt="visual code">
+          </div>
+          <div class="tool-percent" data-target="90">0%</div>
+          <div class="tool-name">Visual Code</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Making project Section -->
+  <div class="container my-5">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h2 class="section-title">My Latest <span class="highlight">Projects</span></h2>
+      <button class="btn " id="project-view"><a href="#">View All Projects</a></button>
+    </div>
+
+    <div class="row g-4">
+      <!-- Project 1 -->
+      <div class="col-md-6 col-lg-6">
+        <div class="project-card">
+          <img src="Assets/Social media post.png" alt="Socialmedia post">
+          <div class="project-info">
+            <div>
+              <span class="tag">Eye-Catching Graphics</span>
+              <span class="tag">Platform-Optimized Sizes</span>
+              <span class="tag">Visual Branding Consistency</span>
+            </div>
+            <div class="project-title">Beauty Product - Ecommerce Mobile App Solution</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="col-md-6 col-lg-6">
+        <div class="project-card">
+          <img src="Assets/Web designing.png" alt="web designing">
+          <div class="project-info">
+            <div>
+              <span class="tag">Responsive</span>
+              <span class="tag">User-friendly</span>
+              <span class="tag">Customize</span>
+            </div>
+            <div class="project-title">Beauty Product Mobile App Landing Page Design</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="col-md-6 col-lg-6">
+        <div class="project-card">
+          <img src="Assets/Amazon.png" alt="Amazon">
+          <div class="project-info">
+            <div>
+              <span class="tag">Product Research & Listing</span>
+              <span class="tag">Inventory Management</span>
+              <span class="tag">Account Handling</span>
+            </div>
+            <div class="project-title">Coffee Shop App – Coffee Ordering App Solution</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="col-md-6 col-lg-6">
+        <div class="project-card">
+          <img src="Assets/Shopify store development  (1).png" alt="Store development">
+          <div class="project-info">
+            <div>
+              <span class="tag">Customizable </span>
+              <span class="tag">Secure & Integrated Payment System</span>
+              <span class="tag">Plugins</span>
+            </div>
+            <div class="project-title">Coffee Shop Mobile App Landing Page Design</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Making education and experience section -->
+  <div class="container">
+    <div class="section-heading">
+      <h5><span>-</span> Education, Ceritifications & Work Experiences</h5>
+      <h2>My <span>Academic</span> and
+        <br><span>Professional</span> Journey
+      </h2>
+    </div>
+
+    <div class="row">
+      <!-- Education -->
+      <div class="col-md-4">
+        <div class="card-box">
+          <div class="icon text-center">
+            🎓
+          </div>
+          <h4 class="text-center mb-4">Education</h4>
+          <div class="entry">
+            <h6>2022 - 2025</h6>
+            <p><strong>Virtual University of Pakistan</strong><br>Bachelor in Software engineering</p>
+          </div>
+          <div class="entry">
+            <h6>2020 - 2021</h6>
+            <p><strong>Gov. Degree College for Womens</strong><br>Intermediate in Pre-Engineering </p>
+          </div>
+          <div class="entry">
+            <h6>2019</h6>
+            <p><strong>Islamia English Model School</strong><br>Matriculation</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Work Experience -->
+      <div class="col-md-4">
+        <div class="card-box">
+          <div class="icon text-center">
+            💼
+          </div>
+          <h4 class="text-center mb-4">Work Experience</h4>
+          <div class="entry">
+            <h6>Freelance Projects</h6>
+            <p><strong>Amaozn FBA & Etsy Virtual Assistant</strong><br>4 years of
+              experience in wholesale and private-label businesses. I specialize in product research, listing
+              optimizing, Inventory management, and customer service, and sales-driven strategies. </p>
+          </div>
+          <div class="entry">
+            <p><strong>Shopify Store Designing</strong><br>2 years of experiencein
+              building responsive, user-friendly stores, customizing themes, and integrating apps to boost functionality
+              and conversions. </p>
+          </div>
+          <div class="entry">
+            <p><strong>Social Media Post Designer</strong><br>3 years of
+              experience crafting scroll-stopping, on-brand content for various platforms. I focus on creating visually
+              appealing designings that enhance engagement, build brand identity, and increase reach. </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ceritifications -->
+      <div class="col-md-4">
+        <div class="card-box">
+          <div class="icon text-center">
+            🎓
+          </div>
+          <h4 class="text-center mb-4">Ceritifications</h4>
+          <div class="entry">
+            <p><strong>SMIT (Continue) </strong><br>Modern Web & App Development</p>
+          </div>
+          <div class="entry">
+            <p><strong>Aptect Computer Education</strong><br>Office Automation Ceritification</p>
+          </div>
+          <div class="entry">
+            <p><strong>Enablers</strong><br>Amazon Private Label & Wholesale Ceritification</p>
+          </div>
+          <div class="entry">
+            <p><strong>Enablers</strong><br>Shopify Store Designing Ceritification</p>
+          </div>
+          <div class="entry">
+            <p><strong>Meta </strong><br>Database Management System Ceritification</p>
+          </div>
+          <div class="entry">
+            <p><strong>Cisco Networking Academy</strong><br>Networking Essentials Ceritification</p>
+          </div>
+          <div class="entry">
+            <p><strong>DigiSkills</strong><br>Freelancing Ceritification</p>
+          </div>
+          <div class="entry">
+            <p><strong>DigiSkills</strong><br>Graphic Designing Ceritification</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Making Social Links section -->
+
+  <div class="container social-section">
+    <div class="row align-items-center">
+      <!-- Left Text Section -->
+      <div class="col-md-6">
+        <h2>Social Links</h2>
+        <p>
+          Stay connected with me through my professional profiles. Explore my projects on
+          <a href="https://github.com/Laibasheikh0215" class="highlight-github">GitHub</a> and connect with me on
+          <a href="https://www.linkedin.com/in/laiba-sheikh15/" class="highlight-linkedin">LinkedIn</a> to see my journey, skills, and what I’m building next!
+        </p>
+        <button class="btn btn-custom " id="social-btn1"><a href="https://www.linkedin.com/in/laiba-sheikh15/"
+            target="_blank">LinkedIn</a></button>
+        <button class="btn btn-custom" id="social-btn2"><a href="https://github.com/Laibasheikh0215"
+            target="_blank">Github</a></button>
+      </div>
+
+      <!-- Right Image Section -->
+      <div class="col-md-6 text-center position-relative">
+        <div class="image-container mx-auto">
+
+          <img src="Assets/Web_Devloper__2_-removebg-preview.png" alt="Person with Laptop" class="img-fluid">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Making Pricing table -->
+  <div class="pricing-tables" style="width:100%; background-color: #1f3a29;">
+    <div class="container py-5" style="background-color: #1f3a29;">
+      <div class="d-flex justify-content-between align-items-center pricing-header">
+        <div>
+          <small class="text-white-50">Pricing Table</small>
+          <h2 class="fw-bold text-white">My <span class="highlight">Pricing Model</span></h2>
+        </div>
+        <button class="get-started-btn">
+          Get Started <i class="bi bi-arrow-right"></i>
+        </button>
+      </div>
+
+      <div class="row g-4">
+        <!-- Hourly -->
+        <div class="col-md-4">
+          <div class="pricing-card shadow">
+            <div class="card-header" style="border-radius: 18px;">
+              <div class="icon-circle">
+                <i class="bi bi-box-arrow-up-right"></i>
+              </div>
+              <h5 style="color:white;">2 Days</h5>
+              <div class="price">$200 <small>/ Day</small></div>
+            </div>
+            <ul class="feature-list">
+              <div class="paragraph" style="color: white;"><b>Amazon Virtual Assistant (Basic) </b>Product Research +
+                Market Analysis+ Listing
+                Content+ 2 hrs deep review meeting- 1 Product</div>
+              <br>
+              <li style="color:white;"><i class="bi bi-check-circle-fill"></i> 2 days</li>
+              <li style="color:white;"><i class="bi bi-check-circle-fill"></i> Inventory Management</li>
+              <li style="color: #ccc;"><i class="bi bi-check-circle-fill muted"></i> Order Management</li>
+              <li style="color:white;"><i class="bi bi-check-circle-fill"></i> Customer Assistant</li>
+              <li class="muted" style="color: #ccc;"><i class="bi bi-check-circle-fill muted"></i>Product offers and
+                promotions</li>
+              <li style="color:white;"><i class="bi bi-check-circle-fill"></i> Reporting</li>
+              <li style="color:white;"><i class="bi bi-check-circle-fill"></i> Account Management</li>
+
+            </ul>
+          </div>
+        </div>
+
+        <!-- Monthly -->
+        <div class="col-md-4">
+          <div class="pricing-card2 highlight-card shadow">
+            <div class="card-header" style="border-radius: 18px;">
+              <div class="icon-circle">
+                <i class="bi bi-box-arrow-up-right"></i>
+              </div>
+              <h5 style="color:white;">Half Month</h5>
+              <div class="price" style="color: #f4a300;">$300 <small style="font-size: 1rem;
+      color: white;
+      font-weight: 400;">/ 15 days</small></div>
+            </div>
+            <ul class="feature-list" style="color:#1f3a29;">
+              <div class="paragraph" style="color: #1f3a29;">Amazon Virtual Assistant (Standard) Product Research +
+                Listing + Sourcing + custom
+                tasks + Account management A-Z- (1 Product)</div>
+              <br>
+              <li><i class="bi bi-check-circle-fill"></i> 15 days</li>
+              <li><i class="bi bi-check-circle-fill"></i> Inventory Management</li>
+              <li><i class="bi bi-check-circle-fill"></i> Order Management</li>
+              <li><i class="bi bi-check-circle-fill"></i> Customer Assistant</li>
+              <li><i class="bi bi-check-circle-fill"></i> Product offers and promotions</li>
+              <li><i class="bi bi-check-circle-fill"></i> Reporting</li>
+              <li class="muted"><i class="bi bi-check-circle-fill"></i> Account Management</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Quarterly -->
+        <div class="col-md-4">
+          <div class="pricing-card shadow">
+            <div class="card-header" style="border-radius: 18px;">
+              <div class="icon-circle">
+                <i class="bi bi-box-arrow-up-right"></i>
+              </div>
+              <h5 style="color:white;">Monthly</h5>
+              <div class="price">$600 <small>/ Month</small></div>
+            </div>
+            <ul class="feature-list">
+              <div class="paragraph" style="color: white;">Amazon Virtual Assistant (Premium) Product Research + listing
+                + Sourcing + PPC Ads
+                + Account management A-Z (1 Product)</div>
+              <br>
+              <li style="color:white;"><i class="bi bi-check-circle-fill"></i> 30 days</li>
+              <li style="color:white;"><i class="bi bi-check-circle-fill"></i> Inventory Management</li>
+              <li style="color:white;"><i class="bi bi-check-circle-fill"></i> Order Management</li>
+              <li style="color:white;"><i class="bi bi-check-circle-fill"></i> Customer Assistant</li>
+              <li style="color:white;"><i class="bi bi-check-circle-fill"></i> Product offers and promotions</li>
+              <li style="color:white;"><i class="bi bi-check-circle-fill"></i> Reporting</li>
+              <li style="color:white;"><i class="bi bi-check-circle-fill"></i> Account Management</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Bootstrap5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <!-- Javascript Link -->
+  <script src="index.js"></script>
+</body>
+
+</html>
