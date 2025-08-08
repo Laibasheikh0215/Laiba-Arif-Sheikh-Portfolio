@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Allura;
+  src: url(Assets/Allura/Allura-Regular.ttf);
+}
+
 /* Styling nav bar */
 .navbar-toggler {
   border: none;
@@ -417,6 +422,7 @@
   font-size: 30px;
   text-decoration: none;
   margin-top: 20px;
+  font-family: Allura;
 }
 
 .name-btn:hover {
@@ -424,6 +430,7 @@
   font-size: 30px;
   text-decoration: none;
   margin-top: 10px;
+  font-family: Allura;
 }
 
 /* Styling fav tools section */
