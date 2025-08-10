@@ -32,28 +32,28 @@
         <!-- Centered nav items -->
         <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" href="#">Home</a>
+            <a class="nav-link active" href="Index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
+            <a class="nav-link" href="#service-section">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#About-me-section">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Projects</a>
+            <a class="nav-link" href="#project-section">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Blogs</a>
+            <a class="nav-link" href="#testimonial-section">Testimonials</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Testimonials</a>
+            <a class="nav-link" href="#FAQs">FAQs</a>
           </li>
         </ul>
 
         <!-- Contact button aligned right -->
         <div class="d-flex contact-btn-wrapper">
-          <a href="#" class="btn contact-btn" style="
+          <a href="#contact-section" class="btn contact-btn" style="
               background-color: #f4a300;
               color: #2d4a30;
               font-weight: 600;
@@ -75,7 +75,7 @@
           <div class="static-text">I am <div class="dynamic-text">
               <ul>
                 <li>a Web Developer</li>
-                <li>an E-commerce Virtual Assistant</li>
+                <li>an E-commerce VA</li>
                 <li>a Freelancer</li>
               </ul>
             </div>
@@ -130,14 +130,14 @@
   </div>
 
   <!-- Making Services card -->
-  <section class="container py-5">
+  <section class="container py-5" id="service-section">
     <div class="d-flex justify-content-between align-items-center mb-4">
-      <h2 class="section-title">
+      <h4 class="section-title">
         <span class="section-title-icon" style="color:#f4a300;"> - <span class="section-title"
-            style="color:black;">Services</span></span>
+            style="color:#2d4a30;">Services</span></span>
         <br>
         <span class="highlight">Services</span> I Provide
-      </h2>
+      </h4>
       <button class="view-btn d-flex align-items-center" id="view-service-btn" onclick="scrollRight()">
         View All Services &nbsp;<span>&rarr;</span>
       </button>
@@ -238,11 +238,12 @@
   </section>
 
   <!-- Making About Me section -->
-  <div class="About-me-container">
+  <div class="About-me-container" id="About-me-section">
     <div class="row justify-content-between align-items-center" style="width: 100%;">
       <!-- Left Side Content -->
 
-      <div class="col-lg-5 col-md-6 col-12 d-flex justify-content-center align-self-start mt-n5 move-up" id="design">
+      <div class="col-lg-5 col-md-6 col-12 d-flex justify-content-center align-self-start mt-n5 move-up"
+        id="About-me-design">
         <div class="Square">
           <div class="images overflow">
             <img src="Assets/Web_Devloper__1_-removebg-preview (3).png" alt="portfolio-imgae" id="portfolio-imgae"
@@ -284,7 +285,10 @@
 
   <!-- Making fav tool section -->
   <section class="tool-section">
-    <h6>- My Favorite Tools</h6>
+    <h4 class="section-title" style="text-align: left;">
+      <span class="section-title-icon" style="color:#f4a300;"> - <span class="section-title"
+          style="color:#2d4a30;">Favorite Tools</span></span>
+    </h4>
     <h2 class="text-warning">Exploring the Tools</h2>
 
     <div class="container mt-5">
@@ -349,9 +353,12 @@
   </section>
 
   <!-- Making project Section -->
-  <div class="container my-5">
+  <div class="container my-5" id="project-section">
     <div class="d-flex justify-content-between align-items-center mb-4">
-      <h2 class="section-title">My Latest <span class="highlight">Projects</span></h2>
+      <h4 class="section-title" style="text-align: left;">
+        <span class="section-title-icon" style="color:#f4a300;"> - <span class="section-title" style="color:#2d4a30;">My
+            Latest Project</span></span>
+      </h4>
       <button class="btn " id="project-view"><a href="#">View All Projects</a></button>
     </div>
 
@@ -422,12 +429,10 @@
   <!-- Making education and experience section -->
   <div class="container">
     <div class="section-heading">
-      <h5><span>-</span> Education, Ceritifications & Work Experiences</h5>
       <h2>My <span>Academic</span> and
         <br><span>Professional</span> Journey
       </h2>
     </div>
-
     <div class="row">
       <!-- Education -->
       <div class="col-md-4">
@@ -435,7 +440,7 @@
           <div class="icon text-center">
             🎓
           </div>
-          <h4 class="text-center mb-4">Education</h4>
+          <h4 class="text-center mb-4" style="color:#f4a300;">Education</h4>
           <div class="entry">
             <h6>2022 - 2025</h6>
             <p><strong>Virtual University of Pakistan</strong><br>Bachelor in Software engineering</p>
@@ -457,7 +462,7 @@
           <div class="icon text-center">
             💼
           </div>
-          <h4 class="text-center mb-4">Work Experience</h4>
+          <h4 class="text-center mb-4" style="color:#f4a300;">Work Experience</h4>
           <div class="entry">
             <h6>Freelance Projects</h6>
             <p><strong>Amaozn FBA & Etsy Virtual Assistant</strong><br>4 years of
@@ -483,7 +488,7 @@
           <div class="icon text-center">
             🎓
           </div>
-          <h4 class="text-center mb-4">Ceritifications</h4>
+          <h4 class="text-center mb-4" style="color:#f4a300;">Ceritifications</h4>
           <div class="entry">
             <p><strong>SMIT (Continue) </strong><br>Modern Web & App Development</p>
           </div>
@@ -519,11 +524,16 @@
     <div class="row align-items-center">
       <!-- Left Text Section -->
       <div class="col-md-6">
-        <h2>Social Links</h2>
-        <p>
+        <h4 class="section-title" style="text-align: left;">
+          <span class="section-title-icon" style="color:#f4a300;"> - <span class="section-title"
+              style="color:#2d4a30;">Social Links</span></span>
+        </h4>
+        <br>
+        <p style="color:#2d4a30;">
           Stay connected with me through my professional profiles. Explore my projects on
           <a href="https://github.com/Laibasheikh0215" class="highlight-github">GitHub</a> and connect with me on
-          <a href="https://www.linkedin.com/in/laiba-sheikh15/" class="highlight-linkedin">LinkedIn</a> to see my journey, skills, and what I’m building next!
+          <a href="https://www.linkedin.com/in/laiba-sheikh15/" class="highlight-linkedin">LinkedIn</a> to see my
+          journey, skills, and what I’m building next!
         </p>
         <button class="btn btn-custom " id="social-btn1"><a href="https://www.linkedin.com/in/laiba-sheikh15/"
             target="_blank">LinkedIn</a></button>
@@ -547,7 +557,6 @@
     <div class="container py-5" style="background-color: #1f3a29;">
       <div class="d-flex justify-content-between align-items-center pricing-header">
         <div>
-          <small class="text-white-50">Pricing Table</small>
           <h2 class="fw-bold text-white">My <span class="highlight">Pricing Model</span></h2>
         </div>
         <button class="get-started-btn">
@@ -642,11 +651,11 @@
   </div>
 
   <!-- Making contact us section -->
-  <div class="container contact-section">
+  <div class="container contact-section" id="contact-section">
     <div class="row">
       <!-- Contact Info Left -->
       <div class="col-md-5 mb-4">
-        <h4 class="section-title">
+        <h4 class="section-title" style="text-align: left;">
           <span class="section-title-icon" style="color:#f4a300;"> - <span class="section-title"
               style="color:#2d4a30;">Contact Us</span></span>
         </h4>
@@ -654,10 +663,14 @@
         <p class="left-text">We’d love to hear from you! Let’s discuss how we can help bring your ideas to life.</p>
 
         <ul class="list-unstyled mt-4">
-          <li class="mb-3"><i class="bi bi-telephone-fill"></i> +92 341 *****12</li>
-          <li class="mb-3"><i class="bi bi-envelope-fill"></i> sheikh.laiba8019@gmail.com</li>
-          <li class="mb-3"><i class="bi bi-instagram"></i> laibaarifsheikh</li>
-          <li class="mb-3"><i class="bi bi-geo-alt-fill"></i> Karachi, Pakistan</li>
+          <li class="mb-3" style="color:#2d4a30;"><i class="bi bi-telephone-fill" style="color: #f4a300;"></i> +92 341
+            *****12</li>
+          <li class="mb-3" style="color:#2d4a30;"><i class="bi bi-envelope-fill" style="color: #f4a300;"></i>
+            sheikh.laiba8019@gmail.com</li>
+          <li class="mb-3" style="color:#2d4a30;"><i class="bi bi-instagram" style="color: #f4a300;"></i>
+            laibaarifsheikh</li>
+          <li class="mb-3" style="color:#2d4a30;"><i class="bi bi-geo-alt-fill" style="color: #f4a300;"></i> Karachi,
+            Pakistan</li>
         </ul>
       </div>
 
@@ -746,10 +759,10 @@
   </div>
 
   <!-- Making Testonomials -->
-  <section class="testimonial-section">
+  <section class="testimonial-section" id="testimonial-section">
     <h4 class="section-title">
       <span class="section-title-icon" style="color:#f4a300;"> - <span class="section-title"
-          style="color:#2d4a30;">Contact Us</span></span>
+          style="color:#2d4a30;">Testimonials</span></span>
     </h4>
     <h2>The Impact of My Work:<br><span>Client Testimonials</span></h2>
 
@@ -769,7 +782,7 @@
   </section>
 
   <!-- Making FAQs -->
-  <div class="FAQs">
+  <div class="FAQs" id="FAQs">
     <div class="container">
       <div class="faq-heading">
         <h4 class="section-title" style="padding-top: 20px;">
@@ -862,7 +875,7 @@
 
   <!-- Making footer -->
   <footer class="footer">
-    <div class="container">
+    <div class="container" id="footer-content">
       <div class="row">
         <!-- Logo and Description -->
         <div class="col-md-3">
