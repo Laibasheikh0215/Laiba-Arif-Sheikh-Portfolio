@@ -32,28 +32,28 @@
         <!-- Centered nav items -->
         <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" href="#">Home</a>
+            <a class="nav-link active" href="Index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
+            <a class="nav-link" href="#service-section">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#About-me-section">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Projects</a>
+            <a class="nav-link" href="#project-section">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Blogs</a>
+            <a class="nav-link" href="#testimonial-section">Testimonials</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Testimonials</a>
+            <a class="nav-link" href="#FAQs">FAQs</a>
           </li>
         </ul>
 
         <!-- Contact button aligned right -->
         <div class="d-flex contact-btn-wrapper">
-          <a href="#" class="btn contact-btn" style="
+          <a href="#contact-section" class="btn contact-btn" style="
               background-color: #f4a300;
               color: #2d4a30;
               font-weight: 600;
@@ -75,7 +75,7 @@
           <div class="static-text">I am <div class="dynamic-text">
               <ul>
                 <li>a Web Developer</li>
-                <li>an E-commerce Virtual Assistant</li>
+                <li>an E-commerce VA</li>
                 <li>a Freelancer</li>
               </ul>
             </div>
@@ -130,14 +130,14 @@
   </div>
 
   <!-- Making Services card -->
-  <section class="container py-5">
+  <section class="container py-5" id="service-section">
     <div class="d-flex justify-content-between align-items-center mb-4">
-      <h2 class="section-title">
+      <h4 class="section-title">
         <span class="section-title-icon" style="color:#f4a300;"> - <span class="section-title"
-            style="color:black;">Services</span></span>
+            style="color:#2d4a30;">Services</span></span>
         <br>
         <span class="highlight">Services</span> I Provide
-      </h2>
+      </h4>
       <button class="view-btn d-flex align-items-center" id="view-service-btn" onclick="scrollRight()">
         View All Services &nbsp;<span>&rarr;</span>
       </button>
@@ -238,11 +238,12 @@
   </section>
 
   <!-- Making About Me section -->
-  <div class="About-me-container">
+  <div class="About-me-container" id="About-me-section">
     <div class="row justify-content-between align-items-center" style="width: 100%;">
       <!-- Left Side Content -->
 
-      <div class="col-lg-5 col-md-6 col-12 d-flex justify-content-center align-self-start mt-n5 move-up" id="design">
+      <div class="col-lg-5 col-md-6 col-12 d-flex justify-content-center align-self-start mt-n5 move-up"
+        id="About-me-design">
         <div class="Square">
           <div class="images overflow">
             <img src="Assets/Web_Devloper__1_-removebg-preview (3).png" alt="portfolio-imgae" id="portfolio-imgae"
@@ -284,7 +285,10 @@
 
   <!-- Making fav tool section -->
   <section class="tool-section">
-    <h6>- My Favorite Tools</h6>
+    <h4 class="section-title" style="text-align: left;">
+      <span class="section-title-icon" style="color:#f4a300;"> - <span class="section-title"
+          style="color:#2d4a30;">Favorite Tools</span></span>
+    </h4>
     <h2 class="text-warning">Exploring the Tools</h2>
 
     <div class="container mt-5">
@@ -349,9 +353,12 @@
   </section>
 
   <!-- Making project Section -->
-  <div class="container my-5">
+  <div class="container my-5" id="project-section">
     <div class="d-flex justify-content-between align-items-center mb-4">
-      <h2 class="section-title">My Latest <span class="highlight">Projects</span></h2>
+      <h4 class="section-title" style="text-align: left;">
+        <span class="section-title-icon" style="color:#f4a300;"> - <span class="section-title" style="color:#2d4a30;">My
+            Latest Project</span></span>
+      </h4>
       <button class="btn " id="project-view"><a href="#">View All Projects</a></button>
     </div>
 
@@ -422,12 +429,10 @@
   <!-- Making education and experience section -->
   <div class="container">
     <div class="section-heading">
-      <h5><span>-</span> Education, Ceritifications & Work Experiences</h5>
       <h2>My <span>Academic</span> and
         <br><span>Professional</span> Journey
       </h2>
     </div>
-
     <div class="row">
       <!-- Education -->
       <div class="col-md-4">
@@ -435,7 +440,7 @@
           <div class="icon text-center">
             🎓
           </div>
-          <h4 class="text-center mb-4">Education</h4>
+          <h4 class="text-center mb-4" style="color:#f4a300;">Education</h4>
           <div class="entry">
             <h6>2022 - 2025</h6>
             <p><strong>Virtual University of Pakistan</strong><br>Bachelor in Software engineering</p>
@@ -457,7 +462,7 @@
           <div class="icon text-center">
             💼
           </div>
-          <h4 class="text-center mb-4">Work Experience</h4>
+          <h4 class="text-center mb-4" style="color:#f4a300;">Work Experience</h4>
           <div class="entry">
             <h6>Freelance Projects</h6>
             <p><strong>Amaozn FBA & Etsy Virtual Assistant</strong><br>4 years of
@@ -483,7 +488,7 @@
           <div class="icon text-center">
             🎓
           </div>
-          <h4 class="text-center mb-4">Ceritifications</h4>
+          <h4 class="text-center mb-4" style="color:#f4a300;">Ceritifications</h4>
           <div class="entry">
             <p><strong>SMIT (Continue) </strong><br>Modern Web & App Development</p>
           </div>
@@ -519,11 +524,16 @@
     <div class="row align-items-center">
       <!-- Left Text Section -->
       <div class="col-md-6">
-        <h2>Social Links</h2>
-        <p>
+        <h4 class="section-title" style="text-align: left;">
+          <span class="section-title-icon" style="color:#f4a300;"> - <span class="section-title"
+              style="color:#2d4a30;">Social Links</span></span>
+        </h4>
+        <br>
+        <p style="color:#2d4a30;">
           Stay connected with me through my professional profiles. Explore my projects on
           <a href="https://github.com/Laibasheikh0215" class="highlight-github">GitHub</a> and connect with me on
-          <a href="https://www.linkedin.com/in/laiba-sheikh15/" class="highlight-linkedin">LinkedIn</a> to see my journey, skills, and what I’m building next!
+          <a href="https://www.linkedin.com/in/laiba-sheikh15/" class="highlight-linkedin">LinkedIn</a> to see my
+          journey, skills, and what I’m building next!
         </p>
         <button class="btn btn-custom " id="social-btn1"><a href="https://www.linkedin.com/in/laiba-sheikh15/"
             target="_blank">LinkedIn</a></button>
@@ -547,7 +557,6 @@
     <div class="container py-5" style="background-color: #1f3a29;">
       <div class="d-flex justify-content-between align-items-center pricing-header">
         <div>
-          <small class="text-white-50">Pricing Table</small>
           <h2 class="fw-bold text-white">My <span class="highlight">Pricing Model</span></h2>
         </div>
         <button class="get-started-btn">
@@ -640,6 +649,290 @@
       </div>
     </div>
   </div>
+
+  <!-- Making contact us section -->
+  <div class="container contact-section" id="contact-section">
+    <div class="row">
+      <!-- Contact Info Left -->
+      <div class="col-md-5 mb-4">
+        <h4 class="section-title" style="text-align: left;">
+          <span class="section-title-icon" style="color:#f4a300;"> - <span class="section-title"
+              style="color:#2d4a30;">Contact Us</span></span>
+        </h4>
+        <h2 style="color:#2d4a30;">Let’s Talk for <span class="highlight">Your<br>Next Projects</span></h2>
+        <p class="left-text">We’d love to hear from you! Let’s discuss how we can help bring your ideas to life.</p>
+
+        <ul class="list-unstyled mt-4">
+          <li class="mb-3" style="color:#2d4a30;"><i class="bi bi-telephone-fill" style="color: #f4a300;"></i> +92 341
+            *****12</li>
+          <li class="mb-3" style="color:#2d4a30;"><i class="bi bi-envelope-fill" style="color: #f4a300;"></i>
+            sheikh.laiba8019@gmail.com</li>
+          <li class="mb-3" style="color:#2d4a30;"><i class="bi bi-instagram" style="color: #f4a300;"></i>
+            laibaarifsheikh</li>
+          <li class="mb-3" style="color:#2d4a30;"><i class="bi bi-geo-alt-fill" style="color: #f4a300;"></i> Karachi,
+            Pakistan</li>
+        </ul>
+      </div>
+
+      <!-- Form Right -->
+      <div class="col-md-7">
+        <form>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label for="name" class="form-label">Your Name *</label>
+              <input type="text" class="form-control" id="name" placeholder="Ex. John Doe" required>
+            </div>
+            <div class="col-md-6">
+              <label for="email" class="form-label">Email *</label>
+              <input type="email" class="form-control" id="email" placeholder="example@gmail.com" required>
+            </div>
+
+            <div class="col-md-6">
+              <label for="phone" class="form-label">Phone *</label>
+              <input type="tel" class="form-control" id="phone" placeholder="Enter Phone Number" required>
+            </div>
+            <div class="col-md-6">
+              <label for="interest" class="form-label">I’m Interested in *</label>
+              <select class="form-select" id="interest" required>
+                <option selected disabled>Select</option>
+                <option>Web Design</option>
+                <option>SEO</option>
+                <option>Marketing</option>
+              </select>
+            </div>
+
+            <div class="col-md-6">
+              <label for="budget" class="form-label">Budget Range (USD) *</label>
+              <select class="form-select" id="budget" required>
+                <option selected disabled>Select Range</option>
+                <option>$500 - $1,000</option>
+                <option>$1,000 - $5,000</option>
+                <option>$5,000+</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label for="country" class="form-label">Country *</label>
+              <select class="form-select" id="country" required>
+                <option selected disabled>Select Country</option>
+                <option>USA</option>
+                <option>UK</option>
+                <option>Pakistan</option>
+                <option>India</option>
+              </select>
+            </div>
+
+            <div class="col-12">
+              <label for="message" class="form-label">Your Message *</label>
+              <textarea class="form-control" id="message" rows="4" placeholder="Enter here..." required></textarea>
+            </div>
+
+            <div class="col-12">
+              <button class="get-started-btn">
+                Submit <i class="bi bi-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Making Skills Strip -->
+  <div class="service-strip-wrapper d-none d-lg-block">
+    <!-- Green bar at the bottom -->
+    <div class="green-bar1"></div>
+    <div class="service-strip ">
+      <span class="service-item">Amazon Private Label</span>
+      <span class="separator">*</span>
+      <span class="service-item">Amazon Wholesale</span>
+      <span class="separator">*</span>
+      <span class="service-item">Web Development</span>
+      <span class="separator">*</span>
+      <span class="service-item">LLC/LTD Creation</span>
+      <span class="separator">*</span>
+      <span class="service-item">Graphic Designing</span>
+      <span class="separator">*</span>
+      <span class="service-item">Shopify Store Development</span>
+    </div>
+    <!-- Green bar at the bottom -->
+    <div class="green-bar2"></div>
+  </div>
+
+  <!-- Making Testonomials -->
+  <section class="testimonial-section" id="testimonial-section">
+    <h4 class="section-title">
+      <span class="section-title-icon" style="color:#f4a300;"> - <span class="section-title"
+          style="color:#2d4a30;">Testimonials</span></span>
+    </h4>
+    <h2>The Impact of My Work:<br><span>Client Testimonials</span></h2>
+
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div id="testimonialWrapper" class="position-relative">
+            <!-- Testimonials will load here -->
+          </div>
+          <div class="arrow-buttons">
+            <button onclick="prevTestimonial()"><i class="bi bi-arrow-left"></i></button>
+            <button onclick="nextTestimonial()"><i class="bi bi-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Making FAQs -->
+  <div class="FAQs" id="FAQs">
+    <div class="container">
+      <div class="faq-heading">
+        <h4 class="section-title" style="padding-top: 20px;">
+          <span class="section-title-icon" style="color:#f4a300;"> - <span class="section-title"
+              style="color:#f4a300;">Contact Us</span></span>
+        </h4>
+        <h2>Questions? <span>Look here.</span></h2>
+      </div>
+
+      <div class="accordion" id="faqAccordion">
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading1">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+              How can i contact you for a project?
+            </button>
+          </h2>
+          <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              You can reach me through the contact form on my website or via email at <a
+                href="mailto:sheikh.laiba8019@gmail.com" style="color: #2d4a30;">Sheikh.laiba8019@gmail.com.</a>. </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading2">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2"
+              aria-expanded="true" aria-controls="collapse2">
+              Do you work with international clients?
+            </button>
+          </h2>
+          <div id="collapse2" class="accordion-collapse collapse show" aria-labelledby="heading2"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Yes, I collaborate with clients worldwide through remote communication tools.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading3">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+              What is your usual project turnaround time?
+            </button>
+          </h2>
+          <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Yes, I’m open to freelance opportunities that align with my skills and availability.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading4">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+              Can you improve my online store’s sales and visibility?
+            </button>
+          </h2>
+          <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Absolutely! I use proven strategies for product listing optimization, SEO, and marketing to boost your
+              store’s traffic and conversions.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading5">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+              Can you customize a website to match my brand?
+            </button>
+          </h2>
+          <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5"
+            data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Absolutely! I ensure each project reflects your unique style and business goals.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Making footer -->
+  <footer class="footer">
+    <div class="container" id="footer-content">
+      <div class="row">
+        <!-- Logo and Description -->
+        <div class="col-md-3">
+          <h5 class="logo-text">Laiba Arif Sheikh</h5>
+          <p>Your Complete Solution for turing dearms into reality.</p>
+          <div class="social-icons">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-youtube"></i></a>
+            <a href="#"><i class="bi bi-camera"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-envelope"></i></a>
+          </div>
+        </div>
+
+        <!-- Navigation -->
+        <div class="col-md-2">
+          <h5>Navigation</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text">Home</a></li>
+            <li><a href="#" class="text">Services</a></li>
+            <li><a href="#" class="text">About</a></li>
+            <li><a href="#" class="text">Projects</a></li>
+            <li><a href="#" class="text">Testimonials</a></li>
+            <li><a href="#" class="text">FAQs</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="col-md-3">
+          <h5>Contact</h5>
+          <p>+92 341 *****12</p>
+          <p>shiekh.laiba8019@gmail.com</p>
+          <p>Karachi, Pakistan</p>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="col-md-4">
+          <h5>Get the latest Information</h5>
+          <form class="d-flex">
+            <input type="email" class="form-control" placeholder="Email address" id="email-box">
+            <button class="btn-subscribe" type="submit"><i class="bi bi-play-fill"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom text-center mt-4">
+      <div class="container d-flex flex-column flex-md-row justify-content-between">
+        <span>Copyright © 2025 <span style="color: #f4b400;">Laiba Arif Sheikh</span> All Rights Reserved.</span>
+        <span>
+          <a href="#">User Terms & Conditions</a> |
+          <a href="#">Privacy Policy</a>
+        </span>
+      </div>
+    </div>
+  </footer>
   <!-- Bootstrap5 JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
