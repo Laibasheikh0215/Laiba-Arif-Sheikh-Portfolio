@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laiba Arif Sheikh</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* Navbar */
+      .navbar-custom {
+        background-color: #2d4a30;
+        border-radius: 50px;
+        padding: 0.5rem 2rem;
+        margin: 1rem auto;
+        max-width: 1100px;
+      }
+
+      .navbar-brand {
+        color: white;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+      }
+
+      .navbar-brand:hover {
+        color: #f4a300;
+      }
+
+      .brand-icon {
+        width: 32px;
+        height: 32px;
+        background-color: #f4a300;
+        border-radius: 50%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 8px;
+        color: #2d4a30;
+        font-weight: bold;
+      }
+
+      .navbar-nav .nav-link {
+        color: white;
+        margin: 0 0.7rem;
+      }
+
+      .navbar-nav .nav-link:hover {
+        color: #f4a300;
+        text-decoration: underline;
+      }
+
+      /* Gallery */
+      .gallery-section h1 {
+        color: #2d4a30;
+      }
+
+      .main-image img {
+        max-height: 400px;
+        object-fit: cover;
+      }
+
+      .thumbnail img {
+        height: 120px;
+        width: 100%;
+        object-fit: cover;
+        cursor: pointer;
+        transition: transform 0.3s;
+      }
+
+      .thumbnail img:hover {
+        transform: scale(1.05);
+      }
+
+      #loadMore {
+        background-color: #2d4a30;
+        color: #f4a300;
+        border-radius: 25px;
+        border: none;
+        padding: 10px 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+      <div class="container-fluid">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">
+          <span class="brand-icon">L</span>
+          Laiba Sheikh
+        </a>
+        <!-- Toggle button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarContent"
+          aria-controls="navbarContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible nav content -->
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <!-- Centered nav items -->
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="Index.html" style="color: white"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#service-section">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#About-me-section">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#project-section">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonial-section">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#FAQs">FAQs</a>
+            </li>
+          </ul>
+
+          <!-- Contact button aligned right -->
+          <div class="d-flex contact-btn-wrapper">
+            <a
+              href="#contact-section"
+              class="btn contact-btn"
+              style="
+                background-color: #f4a300;
+                color: #2d4a30;
+                font-weight: 600;
+                border-radius: 50px;
+              "
+              >Contact Me</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section py-5">
+      <div class="container text-center">
+        <h1 class="fw-bold mb-4">E-commerce Project</h1>
+
+        <!-- Main Image -->
+        <div class="main-image mb-3">
+          <img
+            id="displayImage"
+            src="Assets/case study 1.PNG"
+            class="img-fluid rounded shadow"
+          />
+          <p id="imageDescription" class="mt-3 fw-semibold text-muted">
+            I specialize in Amazon PPC campaign management, helping businesses
+            optimize their advertising strategies for maximum profitability.
+            This case study highlights my ability to analyze ad performance,
+            reduce costs, and improve sales. The data showcases a 13.42% ACOS,
+            ensuring an efficient ad spend while generating $247,331.87 in total
+            sales from a $33,200.71 ad budget. With a CPC of $0.22, I focus on
+            lowering costs while maintaining high conversion rates. The graph
+            represents trends in sales, ad spend, and ACOS over time, reflecting
+            seasonal variations, strategic bidding adjustments, and campaign
+            optimizations. By leveraging in-depth data analysis, I help
+            businesses scale their brands and maximize return on investment. If
+            you’re looking for a results-driven Amazon PPC expert, let’s work
+            together to grow your brand!
+          </p>
+        </div>
+
+        <!-- Thumbnails -->
+        <div class="row g-3 justify-content-center" id="gallery"></div>
+
+        <!-- Load More -->
+        <button class="btn mt-4" id="loadMore">Load More</button>
+      </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      const images = [
+        {
+          src: "Assets/case study 1.PNG",
+          desc: "I specialize in Amazon PPC campaign management, helping businesses optimize their advertising strategies for maximum profitability. This case study highlights my ability to analyze ad performance, reduce costs, and improve sales. The data showcases a 13.42% ACOS, ensuring an efficient ad spend while generating $247,331.87 in total sales from a $33,200.71 ad budget. With a CPC of $0.22, I focus on lowering costs while maintaining high conversion rates. The graph represents trends in sales, ad spend, and ACOS over time, reflecting seasonal variations, strategic bidding adjustments, and campaign optimizations. By leveraging in-depth data analysis, I help businesses scale their brands and maximize return on investment. If you’re looking for a results-driven Amazon PPC expert, let’s work together to grow your brand!",
+        },
+        {
+          src: "Assets/case study 2.PNG",
+          desc: "A product with more than 1000 average monthly sales and more than 34,000$ average monthly revenue and has only 307 Average reviews. What is better than the type of product with great potential and very low-level competition? We have done this research for a well-known USA Brand they were looking to increase their product range.",
+        },
+        {
+          src: "Assets/case study 3.PNG",
+          desc: "One established Amazon seller from the German market contacted us for finding winning products for his Amazon FBA Store because he wants to increase his product range in the Home & Kitchen Category. His criteria for product research were (1) Competitors Maximum 1000 (2) Price < 50€ (3) Market German (4) Revenue 5000€-10000€ (5) Margins 30%+ (6) Prefer home & kitchen category. We found a product that exactly matches his requirements with a profit margin of 35%.",
+        },
+        {
+          src: "Assets/case study 4.PNG",
+          desc: "We have done product research for a client who has a limited budget for his Amazon FBA launch. He wanted a product that is selling for around 15$-20$ and can easily be sourced 2$-3$ from Alibaba. We did our research and get a highly demanding product with a very low competition where the sellers have reviews of less than 200. The profit margins are around 30% after all costs. The client was very happy with our services as he gets his desired product within his budget range.",
+        },
+        {
+          src: "Assets/case study 5.PNG",
+          desc: "A client approached us for Amazon product research. He wants to get a high-demand product with low competition in the Amazon USA market. He wants a product under the 30$ price range and the sourcing price from Alibaba under 5$.  Moreover, the product would not seasonal, not trendy. Low-weight, competitors have minimum reviews and generate handsome revenue. After understanding his all requirements we find out a winning product for him with 40% profit margins and competition is really very low.",
+        },
+        {
+          src: "Assets/case study 6.PNG",
+          desc: "Finding Winning Products for Amazon FBA Private Label is an Art. Last week a client from the USA reached us for getting our services to find a profitable product for him. The client was struggling to find a good product he spent too much time finding products by itself but he didn't get a good product. We discussed his requirements and started working according to his needs and we find a winning product in Kitchen & Dining Category with 40% Profit Margins. The average review number is 65 which is really a low-level competition and the average revenue was 6,700$ which is very decent. We also helped that client in sourcing to get the best prices with customization from Alibaba suppliers.",
+        },
+        {
+          src: "Assets/case study 7.PNG",
+          desc: "We did this product research for a client who was interested to launch his 2nd Product on the Amazon USA market. He wants a product that has great demand and a high number of sales with great revenue opportunities. Our recommended product has more than 1000 average sales and 34,000$ average monthly revenue with very low competition. The majority of the sellers had reviews of less than 300 in this niche. This was a high-demanding product with low competition.",
+        },
+        {
+          src: "Assets/case study 8.PNG",
+          desc: "We have done this research for Amazon USA. The product has high demand with low competition. The client wants to launch a product with great opportunities and good profit margins. Our recommended product fulfilled his all requirements.",
+        },
+      ];
+
+      let visibleCount = 4;
+
+      const gallery = document.getElementById("gallery");
+      const displayImage = document.getElementById("displayImage");
+      const imageDescription = document.getElementById("imageDescription");
+      const loadMoreBtn = document.getElementById("loadMore");
+
+      function loadImages() {
+        gallery.innerHTML = "";
+
+        images.slice(0, visibleCount).forEach((img) => {
+          const col = document.createElement("div");
+          col.className = "col-6 col-md-3 thumbnail text-center";
+
+          col.innerHTML = `
+                  <img src="${img.src}" class="img-fluid rounded mb-2"
+                    onclick="swapImage('${img.src}', '${img.desc}')">
+                  <p class="small text-muted">${img.desc}</p>
+                `;
+
+          gallery.appendChild(col);
+        });
+
+        if (visibleCount >= images.length) {
+          loadMoreBtn.style.display = "none";
+        }
+      }
+
+      function swapImage(src, desc) {
+        displayImage.src = src;
+        imageDescription.innerText = desc;
+      }
+
+      loadMoreBtn.addEventListener("click", () => {
+        visibleCount += 2;
+        loadImages();
+      });
+
+      loadImages();
+    </script>
+  </body>
+</html>
