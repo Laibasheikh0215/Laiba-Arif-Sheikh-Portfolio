@@ -53,6 +53,7 @@
   color: white;
   margin: 0 0.7rem;
   text-decoration: none;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .navbar-nav .nav-link:hover {
@@ -176,6 +177,17 @@
 
 /* Styling hire me buttons */
 .hire-me {
+  background-color: white;
+  color: #2d4a30;
+  border: 1px solid #2d4a30;
+  border-radius: 50px;
+  width: 24px;
+  height: 24px;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.hire-me:hover {
   background-color: white;
   color: #2d4a30;
   border: 1px solid #2d4a30;
