@@ -183,3 +183,54 @@ function prevTestimonial() {
 }
 
 window.onload = () => renderTestimonial(currentIndex);
+
+// Firebase Configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyAwsNYpkcBdZT7mg0rwIWnte9hrckMsHcE",
+  authDomain: "laiba-portfolio-6477f.firebaseapp.com",
+  projectId: "laiba-portfolio-6477f",
+  storageBucket: "laiba-portfolio-6477f.appspot.com",
+  messagingSenderId: "854420796602",
+  appId: "1:854420796602:web:f54ab0f7a5d0a7d079be83"
+};
+
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+const db = firebase.firestore();
+
+// Wait for DOM
+document.addEventListener("DOMContentLoaded", () => {
+
+  const contactForm = document.getElementById("contactForm");
+
+  if (!contactForm) {
+    console.error("❌ Contact form not found");
+    return;
+  }
+
+  contactForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const data = {
+      name: document.getElementById("name").value,
+      email: document.getElementById("email").value,
+      phone: document.getElementById("phone").value,
+      interest: document.getElementById("interest").value,
+      budget: document.getElementById("budget").value,
+      country: document.getElementById("country").value,
+      message: document.getElementById("message").value,
+      timestamp: firebase.firestore.FieldValue.serverTimestamp()
+    };
+
+    db.collection("contacts").add(data)
+      .then(() => {
+        alert("✅ Message sent successfully!");
+        contactForm.reset();
+      })
+      .catch((error) => {
+        console.error(error);
+        alert("❌ Something went wrong");
+      });
+  });
+
+});
